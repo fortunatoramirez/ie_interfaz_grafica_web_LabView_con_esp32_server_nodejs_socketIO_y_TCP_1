@@ -1,4 +1,4 @@
-var socket = io.connect('192.168.1.127:5001', {'forceNew':true});
+var socket = io.connect();
 var explodedValues = [4];
 
 
