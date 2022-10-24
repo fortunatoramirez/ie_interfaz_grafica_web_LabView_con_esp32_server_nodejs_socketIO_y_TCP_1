@@ -29,6 +29,7 @@ void setup() {
   pinMode(ONBOARD_LED,OUTPUT);
   Serial.begin(115200);
   conectar_WiFiSTA();
+  dht.begin();
   socketIO.begin(server, port);
   socketIO.on("desde_servidor_comando",procesar_mensaje_recibido);
 }
